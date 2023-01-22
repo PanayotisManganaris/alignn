@@ -27,6 +27,10 @@ flake8 = ">=3.9.1"
 pycodestyle = ">=2.7.0"
 pydocstyle = ">=6.0.0"
 pyparsing = "^2.2.1"
+pytest = "^7.2.1"
+codecov = "^2.1.12"
+pytest-cov = "^4.0.0"
+coverage = "^7.0.5"
 
 [build-system]
 requires = ["poetry-core"]
