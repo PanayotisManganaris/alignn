@@ -1,6 +1,36 @@
+[tool.poetry]
+name = "alignn"
+version = "2023.01.10"
+description = ""
+authors = ["Kamal Choudhary"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+jarvis-tools = {git = "https://github.com/panayotismanganaris/jarvis.git", rev = "pm/alignn-patch"}
+torch = ">=1.6.1"
+dgl = ">=0.6.0"
+scikit-learn = ">=0.22.2"
+matplotlib = ">=3.4.1"
+tqdm = ">=4.60.0"
+pandas = ">=1.2.3"
+pytorch-ignite = "^0.4.10"
+ase = "^3.22.1"
+numpy = ">=1.19.5"
+scipy = ">=1.6.1"
+cif2cell = {version = "^2.0.0a3", optional = true}
+pytraj = {version = "^2.0.5", optional = true}
+
+[tool.poetry.group.dev.dependencies]
+pydantic = ">=1.8.1"
+flake8 = ">=3.9.1"
+pycodestyle = ">=2.7.0"
+pydocstyle = ">=6.0.0"
+pyparsing = "^2.2.1"
+
 [build-system]
-requires = ["setuptools >= 40.6.0", "wheel"]
-build-backend = "setuptools.build_meta"
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
 
 [tool.isort]
 multi_line_output = 3
