@@ -268,42 +268,13 @@ files = [
 ]
 
 [[package]]
-name = "dgl"
-version = "0.9.1"
+name = "dgl-cu116"
+version = "0.9.1.post1"
 description = "Deep Graph Library"
 category = "main"
 optional = false
 python-versions = "*"
-files = [
-    {file = "dgl-0.9.1-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:7b9848c2c643d7b4d4c1969d05e511aff776b101c69573defd3382107b25a5c9"},
-    {file = "dgl-0.9.1-cp310-cp310-macosx_11_0_arm64.whl", hash = "sha256:973d30b8d7aba76ad0fdc49c12f5c9359f0913be73708f9e1b6a71e40b181252"},
-    {file = "dgl-0.9.1-cp310-cp310-manylinux1_x86_64.whl", hash = "sha256:1c4c0d3f3003cdda5b3ceffafb6246a821ee7ccbd4941dfef7826e99119218bb"},
-    {file = "dgl-0.9.1-cp310-cp310-win_amd64.whl", hash = "sha256:e51b9050eb4237b2c72e3e6f78511e65e4532dfc35fb70825ad42df1aee1ad8f"},
-    {file = "dgl-0.9.1-cp36-cp36m-macosx_10_9_x86_64.whl", hash = "sha256:76635838f09bef50684763d5ed81075f92e547d4c984c1cf840be16a86b5a409"},
-    {file = "dgl-0.9.1-cp36-cp36m-macosx_11_0_arm64.whl", hash = "sha256:af42754a5ac2437e5b36a9aa04403f622b846f48a4ae4e4763f09c6b00fd00fb"},
-    {file = "dgl-0.9.1-cp36-cp36m-manylinux1_x86_64.whl", hash = "sha256:2b63fb0eb224c65113ef26cc68ef206565106b9aee6e221c7e6bfcc1cdacc5c9"},
-    {file = "dgl-0.9.1-cp36-cp36m-win_amd64.whl", hash = "sha256:b245d988954db65c002a77da3ad80f97b13cc3c1a9027799c7d239d8e7e4dbd8"},
-    {file = "dgl-0.9.1-cp37-cp37m-macosx_10_9_x86_64.whl", hash = "sha256:e3ddfdbd0eca8401be2fc2ea18bef4d1c5bf9c844a67afacf54720d3a5d574da"},
-    {file = "dgl-0.9.1-cp37-cp37m-macosx_11_0_arm64.whl", hash = "sha256:14acd668646cb214f6409da09874b4237d62deef3d48a0b1a02eeefd4f84cd17"},
-    {file = "dgl-0.9.1-cp37-cp37m-manylinux1_x86_64.whl", hash = "sha256:9d7b740db8f0b84a7d98c3557e60fb05965fe1c4ec7f91c606aa99e21f835b03"},
-    {file = "dgl-0.9.1-cp37-cp37m-win_amd64.whl", hash = "sha256:b09bd5e301b5483f9f4684fb19cfacc6d10333d54c28f345ffca3ce86afa66e1"},
-    {file = "dgl-0.9.1-cp38-cp38-macosx_10_9_x86_64.whl", hash = "sha256:71282ec77d99d2de439fcdbf3529a636b6ca80134b7ccd6926e7b5ec433d7cfe"},
-    {file = "dgl-0.9.1-cp38-cp38-macosx_11_0_arm64.whl", hash = "sha256:10b940df11175001f0df016e004333c746b15bb22842cf1de863d20ec5b8740c"},
-    {file = "dgl-0.9.1-cp38-cp38-manylinux1_x86_64.whl", hash = "sha256:4be35f9942b700603d730a770ab5b24a8ed11ad6c992051dc917ccf02fae70c1"},
-    {file = "dgl-0.9.1-cp38-cp38-win_amd64.whl", hash = "sha256:9fb788b4ba2df07b19a4982700e75a143c611847a52c3c5fd670a46d33f26061"},
-    {file = "dgl-0.9.1-cp39-cp39-macosx_10_9_x86_64.whl", hash = "sha256:8c1efe436309ff7932aea1ecc2439baf8d82f478443a6a6d6e7372ab44315613"},
-    {file = "dgl-0.9.1-cp39-cp39-macosx_11_0_arm64.whl", hash = "sha256:fecbd81a2fe1a15f3d2eb0952343ea33a406c9d3b24741e9d86cb0a5ce6946c0"},
-    {file = "dgl-0.9.1-cp39-cp39-manylinux1_x86_64.whl", hash = "sha256:242a7cf52335fa91de35b80f5c1671b0f5aede10490cf9812bb4375aa1937620"},
-    {file = "dgl-0.9.1-cp39-cp39-win_amd64.whl", hash = "sha256:e4481112f528e8d2b74e20dee2b26d0ac67de3c1872814f595a865b5ad92a241"},
-]
-
-[package.dependencies]
-networkx = ">=2.1"
-numpy = ">=1.14.0"
-psutil = ">=5.8.0"
-requests = ">=2.19.0"
-scipy = ">=1.1.0"
-tqdm = "*"
+files = []
 
 [[package]]
 name = "exceptiongroup"
@@ -389,13 +360,15 @@ files = [
 
 [[package]]
 name = "jarvis-tools"
-version = "2022.9.16"
+version = "2023.1.8"
 description = "jarvis-tools: an open-source software package for data-driven atomistic materials design. https://jarvis.nist.gov/"
 category = "main"
 optional = false
 python-versions = "*"
-files = []
-develop = false
+files = [
+    {file = "jarvis-tools-2023.1.8.tar.gz", hash = "sha256:80d95efa129d06c4d8cf23d7970c2016a7c38218471e493a24cb04652e36c0f8"},
+    {file = "jarvis_tools-2023.1.8-py2.py3-none-any.whl", hash = "sha256:008397c47268860409f4d398e4fd4ee35e0af7bc02810d4bca22fa604be48148"},
+]
 
 [package.dependencies]
 joblib = ">=0.14.1"
@@ -412,12 +385,6 @@ xmltodict = ">=0.11.0"
 ai = ["dgl", "flask", "keras", "pandas", "scikit-learn", "tensorflow", "torch"]
 babel = ["openbabel", "pybel"]
 doc = ["sphinx (>=1.3.1)", "sphinx-rtd-theme (>=0.1.8)"]
-
-[package.source]
-type = "git"
-url = "https://github.com/panayotismanganaris/jarvis.git"
-reference = "pm/alignn-patch"
-resolved_reference = "6cc547d838a8f9ec9a68877c55acb8295cd427c6"
 
 [[package]]
 name = "joblib"
@@ -582,25 +549,6 @@ files = [
     {file = "mccabe-0.7.0-py2.py3-none-any.whl", hash = "sha256:6c2d30ab6be0e4a46919781807b4f0d834ebdd6c6e3dca0bda5a15f863427b6e"},
     {file = "mccabe-0.7.0.tar.gz", hash = "sha256:348e0240c33b60bbdf4e523192ef919f28cb2c3d7d5c7794f74009290f236325"},
 ]
-
-[[package]]
-name = "networkx"
-version = "3.0"
-description = "Python package for creating and manipulating graphs and networks"
-category = "main"
-optional = false
-python-versions = ">=3.8"
-files = [
-    {file = "networkx-3.0-py3-none-any.whl", hash = "sha256:58058d66b1818043527244fab9d41a51fcd7dcc271748015f3c181b8a90c8e2e"},
-    {file = "networkx-3.0.tar.gz", hash = "sha256:9a9992345353618ae98339c2b63d8201c381c2944f38a2ab49cb45a4c667e412"},
-]
-
-[package.extras]
-default = ["matplotlib (>=3.4)", "numpy (>=1.20)", "pandas (>=1.3)", "scipy (>=1.8)"]
-developer = ["mypy (>=0.991)", "pre-commit (>=2.20)"]
-doc = ["nb2plots (>=0.6)", "numpydoc (>=1.5)", "pillow (>=9.2)", "pydata-sphinx-theme (>=0.11)", "sphinx (==5.2.3)", "sphinx-gallery (>=0.11)", "texext (>=0.6.7)"]
-extra = ["lxml (>=4.6)", "pydot (>=1.4.2)", "pygraphviz (>=1.10)", "sympy (>=1.10)"]
-test = ["codecov (>=2.1)", "pytest (>=7.2)", "pytest-cov (>=4.0)"]
 
 [[package]]
 name = "numpy"
@@ -874,33 +822,6 @@ dev = ["pre-commit", "tox"]
 testing = ["pytest", "pytest-benchmark"]
 
 [[package]]
-name = "psutil"
-version = "5.9.4"
-description = "Cross-platform lib for process and system monitoring in Python."
-category = "main"
-optional = false
-python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
-files = [
-    {file = "psutil-5.9.4-cp27-cp27m-macosx_10_9_x86_64.whl", hash = "sha256:c1ca331af862803a42677c120aff8a814a804e09832f166f226bfd22b56feee8"},
-    {file = "psutil-5.9.4-cp27-cp27m-manylinux2010_i686.whl", hash = "sha256:68908971daf802203f3d37e78d3f8831b6d1014864d7a85937941bb35f09aefe"},
-    {file = "psutil-5.9.4-cp27-cp27m-manylinux2010_x86_64.whl", hash = "sha256:3ff89f9b835100a825b14c2808a106b6fdcc4b15483141482a12c725e7f78549"},
-    {file = "psutil-5.9.4-cp27-cp27m-win32.whl", hash = "sha256:852dd5d9f8a47169fe62fd4a971aa07859476c2ba22c2254d4a1baa4e10b95ad"},
-    {file = "psutil-5.9.4-cp27-cp27m-win_amd64.whl", hash = "sha256:9120cd39dca5c5e1c54b59a41d205023d436799b1c8c4d3ff71af18535728e94"},
-    {file = "psutil-5.9.4-cp27-cp27mu-manylinux2010_i686.whl", hash = "sha256:6b92c532979bafc2df23ddc785ed116fced1f492ad90a6830cf24f4d1ea27d24"},
-    {file = "psutil-5.9.4-cp27-cp27mu-manylinux2010_x86_64.whl", hash = "sha256:efeae04f9516907be44904cc7ce08defb6b665128992a56957abc9b61dca94b7"},
-    {file = "psutil-5.9.4-cp36-abi3-macosx_10_9_x86_64.whl", hash = "sha256:54d5b184728298f2ca8567bf83c422b706200bcbbfafdc06718264f9393cfeb7"},
-    {file = "psutil-5.9.4-cp36-abi3-manylinux_2_12_i686.manylinux2010_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:16653106f3b59386ffe10e0bad3bb6299e169d5327d3f187614b1cb8f24cf2e1"},
-    {file = "psutil-5.9.4-cp36-abi3-manylinux_2_12_x86_64.manylinux2010_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:54c0d3d8e0078b7666984e11b12b88af2db11d11249a8ac8920dd5ef68a66e08"},
-    {file = "psutil-5.9.4-cp36-abi3-win32.whl", hash = "sha256:149555f59a69b33f056ba1c4eb22bb7bf24332ce631c44a319cec09f876aaeff"},
-    {file = "psutil-5.9.4-cp36-abi3-win_amd64.whl", hash = "sha256:fd8522436a6ada7b4aad6638662966de0d61d241cb821239b2ae7013d41a43d4"},
-    {file = "psutil-5.9.4-cp38-abi3-macosx_11_0_arm64.whl", hash = "sha256:6001c809253a29599bc0dfd5179d9f8a5779f9dffea1da0f13c53ee568115e1e"},
-    {file = "psutil-5.9.4.tar.gz", hash = "sha256:3d7f9739eb435d4b1338944abe23f49584bde5395f27487d2ee25ad9a8774a62"},
-]
-
-[package.extras]
-test = ["enum34", "ipaddress", "mock", "pywin32", "wmi"]
-
-[[package]]
 name = "pycifrw"
 version = "4.4"
 description = "CIF/STAR file support for Python"
@@ -1091,27 +1012,6 @@ files = [
 [package.dependencies]
 packaging = "*"
 torch = ">=1.3,<2"
-
-[[package]]
-name = "pytraj"
-version = "2.0.5"
-description = "Python API for cpptraj: a data analysis package for biomolecular simulation"
-category = "main"
-optional = true
-python-versions = "*"
-files = [
-    {file = "pytraj-2.0.5-cp35-cp35m-macosx_10_6_x86_64.whl", hash = "sha256:33ed3f1a1ce3b113c0b33fa0c1fc443225eca98bb4389efa27289675b64444db"},
-    {file = "pytraj-2.0.5-cp35-cp35m-manylinux1_x86_64.whl", hash = "sha256:59f748031249926312eb855ea923c552db1592a143d33049eb31ecb1a01b6581"},
-    {file = "pytraj-2.0.5-cp36-cp36m-macosx_10_14_x86_64.whl", hash = "sha256:6d15d263c87b88dada01c9c7b9cba24ed421f79e3694f7bdf4784d50189582d0"},
-    {file = "pytraj-2.0.5-cp36-cp36m-manylinux1_x86_64.whl", hash = "sha256:dd324f6b2cb2aee9ad045c950910b9f68ff954f28c5d152d01234a279fd11180"},
-    {file = "pytraj-2.0.5-cp37-cp37m-macosx_10_14_x86_64.whl", hash = "sha256:dae562b4930bca6a0fc7d374cb4fb263e2eef7d1d513d9ec398497db5b1c808a"},
-    {file = "pytraj-2.0.5-cp37-cp37m-manylinux1_x86_64.whl", hash = "sha256:ed9f804bcca160764b7fac4e4f6c77af3fb6a83a5462e5963fb35158cb98ab7f"},
-    {file = "pytraj-2.0.5-cp38-cp38-macosx_10_14_x86_64.whl", hash = "sha256:822f975fd8fe1c5e207913c7d4e8088327ebeab60e462eac6c88f17b6cdacbbd"},
-    {file = "pytraj-2.0.5.tar.gz", hash = "sha256:4326dde78ef2c85c145d130fda27bce302c3d2e7862ceeb0911b76d7cdee3385"},
-]
-
-[package.dependencies]
-numpy = "*"
 
 [[package]]
 name = "pytz"
@@ -1469,7 +1369,10 @@ files = [
     {file = "xmltodict-0.13.0.tar.gz", hash = "sha256:341595a488e3e01a85a9d8911d8912fd922ede5fecc4dce437eb4b6c8d037e56"},
 ]
 
+[extras]
+structs = ["cif2cell"]
+
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.8"
-content-hash = "b04a6f53a243558b27794ff2510b683e7dc08d20b924dcfebafb4592b379f88e"
+content-hash = "9540dbd2e9f95e8e56076f53ab42e03b695d46188366df2b99591bb1553e1465"
